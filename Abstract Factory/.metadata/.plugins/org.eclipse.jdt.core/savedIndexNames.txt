@@ -1,4 +1,0 @@
-INDEX VERSION 1.127+/dados/workspaces/design-patterns/Abstract Factory/.metadata/.plugins/org.eclipse.jdt.core
-1892287563.index
-1122825967.index
-1881049201.index
