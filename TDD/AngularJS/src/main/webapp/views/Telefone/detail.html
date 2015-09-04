@@ -1,0 +1,54 @@
+<header ng-switch on="$location.path().indexOf('/Telefones/new') > -1">
+    <h3 ng-switch-when="true">Create a new Telefone</h3>
+    <h3 ng-switch-when="false">View or edit Telefone</h3>
+</header>
+<form id="TelefoneForm" name="TelefoneForm" class="form-horizontal" role="form">
+    <div ng-show="displayError" class="alert alert-danger">
+        <strong>Error!</strong> Something broke. Retry, or cancel and start afresh.
+    </div>
+    
+    <div class="form-group" ng-class="{'has-error': TelefoneForm.pessoa.$invalid}">
+        <label for="pessoa" class="col-sm-2 control-label">Pessoa</label>
+        <div id="pessoaControls" class="col-sm-10">
+        <select id="pessoa" name="pessoa" class="form-control" ng-model="pessoaSelection" ng-options="p.text for p in pessoaSelectionList" required >
+            <option value="">Choose a Pessoa</option>
+        </select>
+        <span class="help-block error" ng-show="TelefoneForm.pessoa.$error.required">required</span> 
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': TelefoneForm.tipo.$invalid}">
+        <label for="tipo" class="col-sm-2 control-label">Tipo</label>
+        <div id="tipoControls" class="col-sm-10">
+        <select id="tipo" name="tipo" class="form-control" ng-model="telefone.tipo" ng-options="t for t in tipoList"  >
+            <option value="">Choose a Tipo</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': TelefoneForm.numero.$invalid}">
+        <label for="numero" class="col-sm-2 control-label">Numero</label>
+        <div id="numeroControls" class="col-sm-10">
+            <input id="numero" name="numero" type="text" required ng-maxlength="11"class="form-control" ng-model="telefone.numero" placeholder="Enter the Telefone Numero"></input>
+            <span class="help-block error" ng-show="TelefoneForm.numero.$error.required">required</span> 
+            <span class="help-block error" ng-show="TelefoneForm.numero.$error.maxlength">maximum length is 11</span>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': TelefoneForm.ramal.$invalid}">
+        <label for="ramal" class="col-sm-2 control-label">Ramal</label>
+        <div id="ramalControls" class="col-sm-10">
+            <input id="ramal" name="ramal" type="text" ng-maxlength="5"class="form-control" ng-model="telefone.ramal" placeholder="Enter the Telefone Ramal"></input>
+            <span class="help-block error" ng-show="TelefoneForm.ramal.$error.maxlength">maximum length is 5</span>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button id="saveTelefone" name="saveTelefone" class="btn btn-primary" ng-disabled="isClean() || TelefoneForm.$invalid" ng-click="save()"><span class="glyphicon glyphicon-ok-sign"></span> Save</button>
+            <button id="cancel" name="cancel" class="btn btn-default" ng-click="cancel()"><span class="glyphicon glyphicon-remove-sign"></span> Cancel</button>
+            <button id="deleteTelefone" name="deleteTelefone" class="btn btn-danger" ng-show="telefone.id" ng-click="remove()"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        </div>
+    </div>
+</form>

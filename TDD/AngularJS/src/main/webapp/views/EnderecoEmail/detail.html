@@ -1,0 +1,45 @@
+<header ng-switch on="$location.path().indexOf('/EnderecoEmails/new') > -1">
+    <h3 ng-switch-when="true">Create a new EnderecoEmail</h3>
+    <h3 ng-switch-when="false">View or edit EnderecoEmail</h3>
+</header>
+<form id="EnderecoEmailForm" name="EnderecoEmailForm" class="form-horizontal" role="form">
+    <div ng-show="displayError" class="alert alert-danger">
+        <strong>Error!</strong> Something broke. Retry, or cancel and start afresh.
+    </div>
+    
+    <div class="form-group" ng-class="{'has-error': EnderecoEmailForm.pessoa.$invalid}">
+        <label for="pessoa" class="col-sm-2 control-label">Pessoa</label>
+        <div id="pessoaControls" class="col-sm-10">
+        <select id="pessoa" name="pessoa" class="form-control" ng-model="pessoaSelection" ng-options="p.text for p in pessoaSelectionList" required >
+            <option value="">Choose a Pessoa</option>
+        </select>
+        <span class="help-block error" ng-show="EnderecoEmailForm.pessoa.$error.required">required</span> 
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': EnderecoEmailForm.tipo.$invalid}">
+        <label for="tipo" class="col-sm-2 control-label">Tipo</label>
+        <div id="tipoControls" class="col-sm-10">
+        <select id="tipo" name="tipo" class="form-control" ng-model="enderecoEmail.tipo" ng-options="t for t in tipoList"  >
+            <option value="">Choose a Tipo</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': EnderecoEmailForm.email.$invalid}">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div id="emailControls" class="col-sm-10">
+            <input id="email" name="email" type="text" ng-maxlength="100"class="form-control" ng-model="enderecoEmail.email" placeholder="Enter the EnderecoEmail Email"></input>
+            <span class="help-block error" ng-show="EnderecoEmailForm.email.$error.maxlength">maximum length is 100</span>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button id="saveEnderecoEmail" name="saveEnderecoEmail" class="btn btn-primary" ng-disabled="isClean() || EnderecoEmailForm.$invalid" ng-click="save()"><span class="glyphicon glyphicon-ok-sign"></span> Save</button>
+            <button id="cancel" name="cancel" class="btn btn-default" ng-click="cancel()"><span class="glyphicon glyphicon-remove-sign"></span> Cancel</button>
+            <button id="deleteEnderecoEmail" name="deleteEnderecoEmail" class="btn btn-danger" ng-show="enderecoEmail.id" ng-click="remove()"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        </div>
+    </div>
+</form>
