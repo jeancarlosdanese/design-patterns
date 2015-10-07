@@ -1,0 +1,27 @@
+package com.algaworks;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Pedido {
+
+	private List<ItemPedido> itensPedido = new ArrayList<>();
+
+	public void adicionarItem(ItemPedido itemPedido) {
+		itensPedido.add(itemPedido);
+	}
+
+	public double valorTotal() {
+		return itensPedido.stream().mapToDouble(i -> i.getValorUnitario() * i.getQuantidade()).sum();
+	}
+
+	public double desconto() {
+		double desconto = 0;
+		double valorTotal = valorTotal();
+		if (valorTotal > 300) {
+			desconto = valorTotal * 0.04;
+		}
+		return desconto;
+	}
+
+}

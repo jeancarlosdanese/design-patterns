@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;com.algaworks.tdd.repository.Pedidos.buscarPeloPEdido(...)&apos; to &apos;buscarPeloPedido&apos;&#x0A;- Original project: &apos;pedido-vendas-mock&apos;&#x0A;- Original element: &apos;com.algaworks.tdd.repository.Pedidos.buscarPeloPEdido(...)&apos;&#x0A;- Renamed element: &apos;com.algaworks.tdd.repository.Pedidos.buscarPeloPedido(...)&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;buscarPeloPEdido&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src\/main\/java&lt;com.algaworks.tdd.repository{Pedidos.java[Pedidos~buscarPeloPEdido~QLong;" name="buscarPeloPedido" references="true" stamp="1443616530248" version="1.0"/>
+</session>

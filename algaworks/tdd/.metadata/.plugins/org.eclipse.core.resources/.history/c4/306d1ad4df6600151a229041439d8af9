@@ -1,0 +1,14 @@
+package com.algaworks;
+
+public class PedidoBuilder {
+
+	private Pedido instancia;
+
+	public PedidoBuilder() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+}

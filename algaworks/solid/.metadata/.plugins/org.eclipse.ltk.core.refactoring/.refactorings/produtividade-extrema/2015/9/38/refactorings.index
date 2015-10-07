@@ -1,0 +1,25 @@
+1442269646969	Rename type 'Gastos'
+1442329205444	Rename type 'Importador'
+1442329236498	Rename local variable 'tp'
+1442329259611	Rename local variable 'dt'
+1442329272662	Rename local variable 'vl'
+1442329287730	Rename local variable 'mat'
+1442329318835	Rename local variable 'dataNascimentoTxt'
+1442329616877	Extract method 'getDataCalendarDeTxt'
+1442329663446	Rename local variable 'dataNascTxt'
+1442336095989	Extract method 'addFuncionario'
+1442340228242	Rename type 'Pessoa'
+1442340284394	Extract superclass 'Pessoa'
+1442345116908	Move compilation unit
+1442345160846	Move compilation units
+1442345188818	Move compilation unit
+1442345211322	Move compilation units
+1442345275576	Move compilation unit
+1442345295424	Move compilation unit
+1442345317140	Move compilation unit
+1442345350659	Move compilation units
+1442346017292	Delete element
+1442353138526	Rename local variable 'filtradorDeGastosEspeciais'
+1442353155486	Rename local variable 'filtradorDeGastosEspefiltradorciais'
+1442358892447	Delete element
+1442360026837	Delete element

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;json&apos; in &apos;JsonReader.main(...)&apos; to &apos;marcas&apos;&#x0A;- Original project: &apos;fipe&apos;&#x0A;- Original element: &apos;JsonReader.main(String[]).json&apos;&#x0A;- Renamed element: &apos;json&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;json&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java&lt;{JsonReader.java[JsonReader~main~\[QString;@json!980!1067!990!993!QJSONArray;!0!false" name="marcas" references="true" stamp="1443113835829" version="1.0"/>
+</session>

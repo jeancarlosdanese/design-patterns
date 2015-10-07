@@ -1,0 +1,5 @@
+1443621060856	Rename field 'apiLogger'
+1443623479272	Rename type 'CDRGenerator'
+1443624201887	Extract interface 'CDRGenerator'
+1443636135122	Extract method 'atualizarSaldoCliente'
+1443636511238	Delete element

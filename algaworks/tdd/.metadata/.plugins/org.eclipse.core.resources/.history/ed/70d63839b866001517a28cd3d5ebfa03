@@ -1,0 +1,49 @@
+package com.algaworks;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class PedidoTest {
+
+	private Pedido pedido;
+
+	@Before
+	public void setup() {
+		pedido = new Pedido();
+	}
+
+	@Test
+	public void daveCriarPedido() throws Exception {
+	}
+
+	@Test
+	public void devePermitirAdicionarUmItemNoPedido() throws Exception {
+		pedido.adicionarItem(new ItemPedido("Sabonete", 3.0, 10));
+	}
+
+	@Test
+	public void deveCalculaValotTotalEDescontoParaPedidoVazio() throws Exception {
+		assertResumoDoPedido(0.0, 0.0);
+	}
+
+	private void assertResumoDoPedido(double valorTotalEsperado, double descontoEsperado) {
+		assertEquals(valorTotalEsperado, pedido.valorTotal(), 0.0001);
+		assertEquals(descontoEsperado, pedido.desconto(), 0.0001);
+	}
+
+	@Test
+	public void deveCalcularResumoParaUmItemSemDesconto() throws Exception{
+		pedido.adicionarItem(new ItemPedido("Sabonete", 5.0, 5));
+		assertResumoDoPedido(25.0, 0);
+	}
+	
+	@Test
+	public void deveCalcularResumoParaDoisItemSemDesconto() throws Exception{
+		pedido.adicionarItem(new ItemPedido("Sabonete", 3.0, 3));
+		pedido.adicionarItem(new ItemPedido("Creme dental", 7.0, 3));
+		assertResumoDoPedido(30.0, 0);
+	}
+	
+}

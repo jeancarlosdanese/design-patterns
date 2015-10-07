@@ -1,0 +1,112 @@
+<header ng-switch on="$location.path().indexOf('/Pessoas/new') > -1">
+    <h3 ng-switch-when="true">Create a new Pessoa</h3>
+    <h3 ng-switch-when="false">View or edit Pessoa</h3>
+</header>
+<form id="PessoaForm" name="PessoaForm" class="form-horizontal" role="form">
+    <div ng-show="displayError" class="alert alert-danger">
+        <strong>Error!</strong> Something broke. Retry, or cancel and start afresh.
+    </div>
+    
+    <div class="form-group" ng-class="{'has-error': PessoaForm.nome.$invalid}">
+        <label for="nome" class="col-sm-2 control-label">Nome</label>
+        <div id="nomeControls" class="col-sm-10">
+            <input id="nome" name="nome" type="text" ng-maxlength="100" ng-minlength="3"class="form-control" ng-model="pessoa.nome" placeholder="Enter the Pessoa Nome"></input>
+            <span class="help-block error" ng-show="PessoaForm.nome.$error.minlength">minimum length is 3</span>
+            <span class="help-block error" ng-show="PessoaForm.nome.$error.maxlength">maximum length is 100</span>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': PessoaForm.sexo.$invalid}">
+        <label for="sexo" class="col-sm-2 control-label">Sexo</label>
+        <div id="sexoControls" class="col-sm-10">
+        <select id="sexo" name="sexo" class="form-control" ng-model="pessoa.sexo" ng-options="s for s in sexoList"  >
+            <option value="">Choose a Sexo</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': PessoaForm.dataNascimento.$invalid}">
+        <label for="dataNascimento" class="col-sm-2 control-label">Data Nascimento</label>
+        <div id="dataNascimentoControls" class="col-sm-10">
+            <date id="dataNascimento" name="dataNascimento" ng-model="pessoa.dataNascimento" placeholder="Enter the Pessoa Data Nascimento"></date>
+            <span class="help-block error" ng-show="PessoaForm.dataNascimento.$error.dateFormat">does not match format "yyyy-MM-dd" (e.g. 2013-12-01)</span>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': PessoaForm.tipoPessoa.$invalid}">
+        <label for="tipoPessoa" class="col-sm-2 control-label">Tipo Pessoa</label>
+        <div id="tipoPessoaControls" class="col-sm-10">
+        <select id="tipoPessoa" name="tipoPessoa" class="form-control" ng-model="pessoa.tipoPessoa" ng-options="t for t in tipoPessoaList"  >
+            <option value="">Choose a Tipo Pessoa</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': PessoaForm.cpfCnpj.$invalid}">
+        <label for="cpfCnpj" class="col-sm-2 control-label">Cpf Cnpj</label>
+        <div id="cpfCnpjControls" class="col-sm-10">
+            <input id="cpfCnpj" name="cpfCnpj" type="text"class="form-control" ng-model="pessoa.cpfCnpj" placeholder="Enter the Pessoa Cpf Cnpj"></input>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': PessoaForm.usuario.$invalid}">
+        <label for="usuario" class="col-sm-2 control-label">Usuario</label>
+        <div id="usuarioControls" class="col-sm-10">
+        <select id="usuario" name="usuario" class="form-control" ng-model="usuarioSelection" ng-options="u.text for u in usuarioSelectionList"  >
+            <option value="">Choose a Usuario</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': PessoaForm.emails.$invalid}">
+        <label for="emails" class="col-sm-2 control-label">Emails</label>
+        <div id="emailsControls" class="col-sm-10">
+            <select id="emails" name="emails" multiple class="form-control" ng-model="emailsSelection" ng-options="e.text for e in emailsSelectionList">
+                <option value="">Choose a Emails</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': PessoaForm.enderecos.$invalid}">
+        <label for="enderecos" class="col-sm-2 control-label">Enderecos</label>
+        <div id="enderecosControls" class="col-sm-10">
+            <select id="enderecos" name="enderecos" multiple class="form-control" ng-model="enderecosSelection" ng-options="e.text for e in enderecosSelectionList">
+                <option value="">Choose a Enderecos</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': PessoaForm.telefones.$invalid}">
+        <label for="telefones" class="col-sm-2 control-label">Telefones</label>
+        <div id="telefonesControls" class="col-sm-10">
+            <select id="telefones" name="telefones" multiple class="form-control" ng-model="telefonesSelection" ng-options="t.text for t in telefonesSelectionList">
+                <option value="">Choose a Telefones</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': PessoaForm.fieldHandler.$invalid}">
+        <label for="fieldHandler" class="col-sm-2 control-label">Field Handler</label>
+        <div id="fieldHandlerControls" class="col-sm-10">
+            <input id="fieldHandler" name="fieldHandler" type="text"class="form-control" ng-model="pessoa.fieldHandler" placeholder="Enter the Pessoa Field Handler"></input>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': PessoaForm.estadoCivil.$invalid}">
+        <label for="estadoCivil" class="col-sm-2 control-label">Estado Civil</label>
+        <div id="estadoCivilControls" class="col-sm-10">
+        <select id="estadoCivil" name="estadoCivil" class="form-control" ng-model="pessoa.estadoCivil" ng-options="e for e in estadoCivilList"  >
+            <option value="">Choose a Estado Civil</option>
+        </select>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button id="savePessoa" name="savePessoa" class="btn btn-primary" ng-disabled="isClean() || PessoaForm.$invalid" ng-click="save()"><span class="glyphicon glyphicon-ok-sign"></span> Save</button>
+            <button id="cancel" name="cancel" class="btn btn-default" ng-click="cancel()"><span class="glyphicon glyphicon-remove-sign"></span> Cancel</button>
+            <button id="deletePessoa" name="deletePessoa" class="btn btn-danger" ng-show="pessoa.id" ng-click="remove()"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        </div>
+    </div>
+</form>

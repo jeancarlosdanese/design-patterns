@@ -1,0 +1,13 @@
+package com.algaworks;
+
+public class ItemPedido {
+	public String descriao;
+	public double valorUnitario;
+	public int quantidade;
+
+	public ItemPedido(String descriao, double valorUnitario, int quantidade) {
+		this.descriao = descriao;
+		this.valorUnitario = valorUnitario;
+		this.quantidade = quantidade;
+	}
+}

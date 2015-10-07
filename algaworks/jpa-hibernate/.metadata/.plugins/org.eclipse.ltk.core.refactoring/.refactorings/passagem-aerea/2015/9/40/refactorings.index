@@ -1,0 +1,6 @@
+1443564713245	Convert local variable 'precoPassagemService' to field
+1443566089474	Extract local variable 'd'
+1443566294082	Extract method 'assertValorPassagem'
+1443566336615	Inline local variable 'valorEsperado'
+1443569649251	Copy compilation unit
+1443570449694	Move compilation units

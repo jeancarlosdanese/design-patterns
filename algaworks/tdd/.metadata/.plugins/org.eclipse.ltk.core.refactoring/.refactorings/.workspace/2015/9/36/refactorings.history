@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;jboss-forge-html5&apos;" deleteContents="true" description="Delete resource &apos;jboss-forge-html5&apos;" element1="/jboss-forge-html5" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1441396538807"/>&#x0A;<refactoring comment="Delete resource &apos;angjs&apos;" deleteContents="true" description="Delete resource &apos;angjs&apos;" element1="/angjs" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1441396766082"/>
+</session>

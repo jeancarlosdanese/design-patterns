@@ -1,0 +1,32 @@
+package com.algaworks;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class PedidoTest {
+	
+	private Pedido pedido;
+
+	@Before
+	public void setup() {
+		pedido = new Pedido();
+	}
+
+	@Test
+	public void daveCriarPedido() throws Exception {
+	}
+
+	@Test
+	public void devePermitirAdicionarUmItemNoPedido() throws Exception {
+		pedido.adicionarItem("Sabonete", 3.0, 10);
+	}
+
+	@Test
+	public void deveCalculaValotTotalParaPedidoVazio() throws Exception{
+		assertEquals(0.0, pedido.valorTotal(), 0.0001);
+	
+	}
+	
+}

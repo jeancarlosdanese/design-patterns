@@ -1,0 +1,28 @@
+package com.algaworks.service;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.algaworks.PedidoBuilder;
+
+public class PrecoPassagemServiceTest {
+
+	private PrecoPassagemService precoPassagemService;
+	
+	@Before
+	public void setup() {
+		precoPassagemService = new PrecoPassagemService();
+	}
+
+	@Test
+	public void deveCriarPrecoPassagemService() throws Exception {
+	}
+	
+	@Test
+	public void deveCalcularPrecoParaPassageiroGoldComValorAbaixoDoLimite() throws Exception {
+		
+	}
+	
+}

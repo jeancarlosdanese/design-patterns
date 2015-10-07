@@ -1,0 +1,15 @@
+package com.algaworks.service;
+
+import com.algaworks.model.Voo;
+
+public class PrecoPassagemGold implements CalculadoraPrecoPassagem {
+
+	@Override
+	public double calcular(Voo voo) {
+		if (voo.getPrecoPassagem() > 500)
+			return voo.getPrecoPassagem() * 0.85;
+
+		return voo.getPrecoPassagem() * 0.9;
+	}
+
+}

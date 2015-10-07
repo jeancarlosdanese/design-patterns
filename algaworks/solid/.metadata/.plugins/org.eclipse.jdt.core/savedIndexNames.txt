@@ -1,0 +1,4 @@
+INDEX VERSION 1.127+/home/jean/dados/workspaces/cursos-avancados/algaworks/solid/.metadata/.plugins/org.eclipse.jdt.core
+1884823932.index
+2907994635.index
+3425152643.index

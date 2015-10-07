@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="/home/jean/.m2/repository/org/glassfish/javax.faces/2.1.17/javax.faces-2.1.17.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.1.17.jar/META-INF/html_basic.tld" project="primeiro-projeto-jsf"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.1.17.jar/META-INF/jsf_core.tld" project="primeiro-projeto-jsf"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.1.17.jar/META-INF/mojarra_ext.taglib.xml" project="primeiro-projeto-jsf"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.1.17.jar/META-INF/mojarra_ext.tld" project="primeiro-projeto-jsf"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/jean/.m2/repository/org/primefaces/primefaces/3.5/primefaces-3.5.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-3.5.jar/META-INF/faces-config.xml" project="primeiro-projeto-jsf"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-3.5.jar/META-INF/primefaces-p.taglib.xml" project="primeiro-projeto-jsf"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/primeiro-projeto-jsf/src/main/webapp/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="primeiro-projeto-jsf"/>
+    </library>
+   </libraries>
+  </path>
+ </paths>
+ <validation>
+  <el>
+   <linked-el length="25" name="%0" offset="735" path="%1"/>
+   <linked-el length="17" name="%0" offset="673" path="%1"/>
+   <linked-el length="25" name="%2" offset="735" path="%1"/>
+   <linked-el length="17" name="%2" offset="673" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="/primeiro-projeto-jsf/src/main/webapp/OlaJSF.xhtml" value="%1"/>
+  <alias
+   path="/primeiro-projeto-jsf/src/main/java/com/algaworks/jsf/MeuBean.java" value="%0"/>
+  <alias path="meuBean" value="%2"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+  <uri value="http://primefaces.org/ui">
+   <prefix>p</prefix>
+  </uri>
+ </uris>
+</kb-project>

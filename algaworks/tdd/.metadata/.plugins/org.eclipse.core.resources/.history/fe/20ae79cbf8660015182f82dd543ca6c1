@@ -1,0 +1,9 @@
+package com.algaworks.service;
+
+public class PrecoPassagemService {
+
+	public double calcular(Object passageiro, Object voo) {
+		return 0;
+	}
+
+}

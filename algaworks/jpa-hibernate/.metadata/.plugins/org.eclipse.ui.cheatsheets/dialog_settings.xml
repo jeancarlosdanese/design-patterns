@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CheatSheetCategoryBasedSelectionDialog">
+		<item value="" key="CheatSheetCategoryBasedSelectionDialog.STORE_CHEATSHEET_URL"/>
+		<item value="328" key="DIALOG_WIDTH"/>
+		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="2" key="CheatSheetCategoryBasedSelectionDialog.STORE_RADIO_SELECTION"/>
+		<item value="/dados/workspaces/design-patterns/TDD/AngularJS/cheatsheet.xml" key="CheatSheetCategoryBasedSelectionDialog.STORE_CHEATSHEET_FILENAME"/>
+		<item value="653" key="DIALOG_HEIGHT"/>
+		<item value="/dados/workspaces/design-patterns/TDD/AngularJS/cheatsheet.xml" key="CheatSheetCategoryBasedSelectionDialog.STORE_FILE_MRU0"/>
+		<item value="799" key="DIALOG_X_ORIGIN"/>
+		<item value="86" key="DIALOG_Y_ORIGIN"/>
+		<item value="/dados/workspaces/design-patterns/TDD/jboss-forge-html5/cheatsheet.xml" key="CheatSheetCategoryBasedSelectionDialog.STORE_FILE_MRU1"/>
+		<list key="CheatSheetCategoryBasedSelectionDialog.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+</section>

@@ -1,0 +1,95 @@
+<header ng-switch on="$location.path().indexOf('/Enderecos/new') > -1">
+    <h3 ng-switch-when="true">Create a new Endereco</h3>
+    <h3 ng-switch-when="false">View or edit Endereco</h3>
+</header>
+<form id="EnderecoForm" name="EnderecoForm" class="form-horizontal" role="form">
+    <div ng-show="displayError" class="alert alert-danger">
+        <strong>Error!</strong> Something broke. Retry, or cancel and start afresh.
+    </div>
+    
+    <div class="form-group" ng-class="{'has-error': EnderecoForm.pessoa.$invalid}">
+        <label for="pessoa" class="col-sm-2 control-label">Pessoa</label>
+        <div id="pessoaControls" class="col-sm-10">
+        <select id="pessoa" name="pessoa" class="form-control" ng-model="pessoaSelection" ng-options="p.text for p in pessoaSelectionList" required >
+            <option value="">Choose a Pessoa</option>
+        </select>
+        <span class="help-block error" ng-show="EnderecoForm.pessoa.$error.required">required</span> 
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': EnderecoForm.tipo.$invalid}">
+        <label for="tipo" class="col-sm-2 control-label">Tipo</label>
+        <div id="tipoControls" class="col-sm-10">
+        <select id="tipo" name="tipo" class="form-control" ng-model="endereco.tipo" ng-options="t for t in tipoList"  >
+            <option value="">Choose a Tipo</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': EnderecoForm.logradouro.$invalid}">
+        <label for="logradouro" class="col-sm-2 control-label">Logradouro</label>
+        <div id="logradouroControls" class="col-sm-10">
+            <input id="logradouro" name="logradouro" type="text" ng-maxlength="100"class="form-control" ng-model="endereco.logradouro" placeholder="Enter the Endereco Logradouro"></input>
+            <span class="help-block error" ng-show="EnderecoForm.logradouro.$error.maxlength">maximum length is 100</span>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': EnderecoForm.numero.$invalid}">
+        <label for="numero" class="col-sm-2 control-label">Numero</label>
+        <div id="numeroControls" class="col-sm-10">
+            <input id="numero" name="numero" type="number" max="99999"class="form-control" ng-model="endereco.numero" placeholder="Enter the Endereco Numero"></input>
+            <span class="help-block error" ng-show="EnderecoForm.numero.$error.number">not a number</span>
+            <span class="help-block error" ng-show="EnderecoForm.numero.$error.max">maximum allowed is 99999</span>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': EnderecoForm.complemento.$invalid}">
+        <label for="complemento" class="col-sm-2 control-label">Complemento</label>
+        <div id="complementoControls" class="col-sm-10">
+            <input id="complemento" name="complemento" type="text" ng-maxlength="100"class="form-control" ng-model="endereco.complemento" placeholder="Enter the Endereco Complemento"></input>
+            <span class="help-block error" ng-show="EnderecoForm.complemento.$error.maxlength">maximum length is 100</span>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': EnderecoForm.bairro.$invalid}">
+        <label for="bairro" class="col-sm-2 control-label">Bairro</label>
+        <div id="bairroControls" class="col-sm-10">
+            <input id="bairro" name="bairro" type="text" ng-maxlength="100"class="form-control" ng-model="endereco.bairro" placeholder="Enter the Endereco Bairro"></input>
+            <span class="help-block error" ng-show="EnderecoForm.bairro.$error.maxlength">maximum length is 100</span>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': EnderecoForm.cidade.$invalid}">
+        <label for="cidade" class="col-sm-2 control-label">Cidade</label>
+        <div id="cidadeControls" class="col-sm-10">
+            <input id="cidade" name="cidade" type="text" ng-maxlength="100"class="form-control" ng-model="endereco.cidade" placeholder="Enter the Endereco Cidade"></input>
+            <span class="help-block error" ng-show="EnderecoForm.cidade.$error.maxlength">maximum length is 100</span>
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': EnderecoForm.estado.$invalid}">
+        <label for="estado" class="col-sm-2 control-label">Estado</label>
+        <div id="estadoControls" class="col-sm-10">
+        <select id="estado" name="estado" class="form-control" ng-model="endereco.estado" ng-options="e for e in estadoList" required >
+            <option value="">Choose a Estado</option>
+        </select>
+        <span class="help-block error" ng-show="EnderecoForm.estado.$error.required">required</span> 
+        </div>
+    </div>
+
+    <div class="form-group" ng-class="{'has-error': EnderecoForm.cep.$invalid}">
+        <label for="cep" class="col-sm-2 control-label">Cep</label>
+        <div id="cepControls" class="col-sm-10">
+            <input id="cep" name="cep" type="text"class="form-control" ng-model="endereco.cep" placeholder="Enter the Endereco Cep"></input>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button id="saveEndereco" name="saveEndereco" class="btn btn-primary" ng-disabled="isClean() || EnderecoForm.$invalid" ng-click="save()"><span class="glyphicon glyphicon-ok-sign"></span> Save</button>
+            <button id="cancel" name="cancel" class="btn btn-default" ng-click="cancel()"><span class="glyphicon glyphicon-remove-sign"></span> Cancel</button>
+            <button id="deleteEndereco" name="deleteEndereco" class="btn btn-danger" ng-show="endereco.id" ng-click="remove()"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        </div>
+    </div>
+</form>

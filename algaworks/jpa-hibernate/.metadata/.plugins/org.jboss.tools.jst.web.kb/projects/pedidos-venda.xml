@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="/home/jean/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
+  <path value="/home/jean/.m2/repository/org/omnifaces/omnifaces/1.8.1/omnifaces-1.8.1.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-omnifaces-1.8.1.jar/META-INF/faces-config.xml" project="pedidos-venda"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-omnifaces-1.8.1.jar/META-INF/omnifaces-functions.taglib.xml" project="pedidos-venda"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-omnifaces-1.8.1.jar/META-INF/omnifaces-ui.taglib.xml" project="pedidos-venda"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/jean/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+  <path value="/home/jean/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar"/>
+  <path value="/home/jean/.m2/repository/org/jboss/weld/servlet/weld-servlet/2.2.1.Final/weld-servlet-2.2.1.Final.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-weld-servlet-2.2.1.Final.jar/META-INF/faces-config.xml" project="pedidos-venda"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/jean/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+  <path value="/home/jean/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar"/>
+  <path value="/pedidos-venda/src/main/webapp/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="pedidos-venda"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/jean/.m2/repository/org/primefaces/primefaces/5.0/primefaces-5.0.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.0.jar/META-INF/faces-config.xml" project="pedidos-venda"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.0.jar/META-INF/primefaces-p.taglib.xml" project="pedidos-venda"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.0.jar/META-INF/primefaces-pm.taglib.xml" project="pedidos-venda"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/jean/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar"/>
+  <path value="/home/jean/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+  <path value="/home/jean/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar"/>
+  <path value="/home/jean/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+  <path value="/home/jean/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
+  <path value="/home/jean/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar"/>
+  <path value="/home/jean/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.6.Final/hibernate-entitymanager-4.3.6.Final.jar"/>
+  <path value="/home/jean/.m2/repository/org/glassfish/javax.faces/2.2.7/javax.faces-2.2.7.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.7.jar/META-INF/html_basic.tld" project="pedidos-venda"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.7.jar/META-INF/jsf_core.tld" project="pedidos-venda"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.7.jar/META-INF/mojarra_ext.taglib.xml" project="pedidos-venda"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.7.jar/META-INF/mojarra_ext.tld" project="pedidos-venda"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/jean/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar"/>
+  <path value="/home/jean/.m2/repository/org/hibernate/hibernate-core/4.3.6.Final/hibernate-core-4.3.6.Final.jar"/>
+  <path value="/home/jean/.m2/repository/mysql/mysql-connector-java/5.1.25/mysql-connector-java-5.1.25.jar"/>
+  <path value="/home/jean/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core">
+   <linked-resource name="%1;%2;%3;%4;%5;" path="%0"/>
+   <linked-resource name="%6;" path="%5"/>
+   <linked-resource name="%1;%2;%3;%4;%5;" path="%7"/>
+   <linked-resource name="%6;%9;%5;" path="%8"/>
+   <linked-resource declaration="true" name="%10;" path="%6"/>
+   <linked-resource name="%0;%9;" path="%11"/>
+   <linked-resource declaration="true" name="%12;" path="%1"/>
+   <linked-resource declaration="true" name="%13;" path="%2"/>
+   <linked-resource declaration="true" name="%14;" path="%3"/>
+  </core>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="48" name="%1" offset="341" path="%15"/>
+   <linked-el length="42" name="%1" offset="538" path="%15"/>
+   <linked-el length="22" name="%16" offset="886" path="%17"/>
+   <linked-el length="14" name="%16" offset="725" path="%17"/>
+   <linked-el length="34" name="%3" offset="724" path="%18"/>
+   <linked-el length="36" name="%3" offset="342" path="%18"/>
+   <linked-el length="38" name="%3" offset="1286" path="%18"/>
+   <linked-el length="41" name="%3" offset="1146" path="%18"/>
+   <linked-el length="37" name="%3" offset="1516" path="%18"/>
+   <linked-el length="32" name="%3" offset="1406" path="%18"/>
+   <linked-el length="37" name="%3" offset="1005" path="%18"/>
+   <linked-el length="34" name="%2" offset="554" path="%17"/>
+   <linked-el length="54" name="%2" offset="341" path="%17"/>
+   <linked-el length="20" name="%19" offset="838" path="%15"/>
+   <linked-el length="24" name="%19" offset="735" path="%15"/>
+   <linked-el length="20" name="%19" offset="2410" path="%20"/>
+   <linked-el length="15" name="%19" offset="2535" path="%20"/>
+   <linked-el length="19" name="%19" offset="2290" path="%20"/>
+   <linked-el length="21" name="%19" offset="938" path="%15"/>
+   <linked-el length="31" name="%6" offset="734" path="%20"/>
+   <linked-el length="38" name="%6" offset="1726" path="%20"/>
+   <linked-el length="43" name="%6" offset="2078" path="%20"/>
+   <linked-el length="40" name="%6" offset="1228" path="%20"/>
+   <linked-el length="41" name="%6" offset="1577" path="%20"/>
+   <linked-el length="49" name="%6" offset="1961" path="%20"/>
+   <linked-el length="32" name="%6" offset="1795" path="%20"/>
+   <linked-el length="38" name="%6" offset="1106" path="%20"/>
+   <linked-el length="31" name="%6" offset="353" path="%20"/>
+   <linked-el length="41" name="%6" offset="1423" path="%20"/>
+   <linked-el length="21" name="%14" offset="1935" path="%18"/>
+   <linked-el length="34" name="%14" offset="724" path="%18"/>
+   <linked-el length="18" name="%14" offset="2452" path="%18"/>
+   <linked-el length="36" name="%14" offset="342" path="%18"/>
+   <linked-el length="41" name="%14" offset="1146" path="%18"/>
+   <linked-el length="22" name="%14" offset="1818" path="%18"/>
+   <linked-el length="19" name="%14" offset="2234" path="%18"/>
+   <linked-el length="32" name="%14" offset="1406" path="%18"/>
+   <linked-el length="38" name="%14" offset="1286" path="%18"/>
+   <linked-el length="37" name="%14" offset="1516" path="%18"/>
+   <linked-el length="18" name="%14" offset="1708" path="%18"/>
+   <linked-el length="22" name="%14" offset="2123" path="%18"/>
+   <linked-el length="37" name="%14" offset="1005" path="%18"/>
+   <linked-el length="48" name="%12" offset="341" path="%15"/>
+   <linked-el length="20" name="%12" offset="838" path="%15"/>
+   <linked-el length="24" name="%12" offset="735" path="%15"/>
+   <linked-el length="42" name="%12" offset="538" path="%15"/>
+   <linked-el length="21" name="%12" offset="938" path="%15"/>
+   <linked-el length="38" name="%21" offset="1726" path="%20"/>
+   <linked-el length="43" name="%21" offset="2078" path="%20"/>
+   <linked-el length="21" name="%21" offset="1935" path="%18"/>
+   <linked-el length="18" name="%21" offset="2452" path="%18"/>
+   <linked-el length="22" name="%21" offset="1818" path="%18"/>
+   <linked-el length="19" name="%21" offset="2234" path="%18"/>
+   <linked-el length="38" name="%21" offset="1106" path="%20"/>
+   <linked-el length="41" name="%21" offset="1423" path="%20"/>
+   <linked-el length="40" name="%21" offset="1228" path="%20"/>
+   <linked-el length="24" name="%21" offset="735" path="%15"/>
+   <linked-el length="41" name="%21" offset="1577" path="%20"/>
+   <linked-el length="49" name="%21" offset="1961" path="%20"/>
+   <linked-el length="18" name="%21" offset="1708" path="%18"/>
+   <linked-el length="22" name="%21" offset="2123" path="%18"/>
+   <linked-el length="34" name="%13" offset="554" path="%17"/>
+   <linked-el length="22" name="%13" offset="886" path="%17"/>
+   <linked-el length="54" name="%13" offset="341" path="%17"/>
+   <linked-el length="14" name="%13" offset="725" path="%17"/>
+   <linked-el length="38" name="%22" offset="1286" path="%18"/>
+   <linked-el length="41" name="%22" offset="1146" path="%18"/>
+   <linked-el length="37" name="%22" offset="1005" path="%18"/>
+   <linked-el length="31" name="%10" offset="734" path="%20"/>
+   <linked-el length="38" name="%10" offset="1726" path="%20"/>
+   <linked-el length="43" name="%10" offset="2078" path="%20"/>
+   <linked-el length="38" name="%10" offset="1106" path="%20"/>
+   <linked-el length="19" name="%10" offset="2290" path="%20"/>
+   <linked-el length="41" name="%10" offset="1423" path="%20"/>
+   <linked-el length="40" name="%10" offset="1228" path="%20"/>
+   <linked-el length="20" name="%10" offset="2410" path="%20"/>
+   <linked-el length="41" name="%10" offset="1577" path="%20"/>
+   <linked-el length="49" name="%10" offset="1961" path="%20"/>
+   <linked-el length="15" name="%10" offset="2535" path="%20"/>
+   <linked-el length="32" name="%10" offset="1795" path="%20"/>
+   <linked-el length="31" name="%10" offset="353" path="%20"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/controller/EntregasPendentesBean.java" value="%1"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/dao/vo/ValorTotalVendaDoDia.java" value="%16"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/controller/ValorVendasPorDiaBean.java" value="%2"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/controller/PesquisaPedidoBean.java" value="%3"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/dao/Pedidos.java" value="%7"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/model/ItemPedido.java" value="%19"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/dao/hibernate/HibernatePedidos.java" value="%0"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/util/jpa/EntityManagerProducer.java" value="%11"/>
+  <alias path="entregasPendentesBean" value="%12"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/converter/PedidoConverter.java" value="%4"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/util/jpa/TransactionInterceptor.java" value="%9"/>
+  <alias path="/pedidos-venda/src/main/webapp/EntregasPendentes.xhtml" value="%15"/>
+  <alias path="cadastroPedidoBean" value="%10"/>
+  <alias path="/pedidos-venda/src/main/webapp/CadastroPedido.xhtml" value="%20"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/controller/CadastroPedidoBean.java" value="%6"/>
+  <alias path="pesquisaPedidoBean" value="%14"/>
+  <alias path="valorVendasPorDiaBean" value="%13"/>
+  <alias path="/pedidos-venda/src/main/webapp/PesquisaPedido.xhtml" value="%18"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/model/Pedido.java" value="%21"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/dao/PedidoFiltro.java" value="%22"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/util/jpa/Transactional.java" value="%8"/>
+  <alias path="/pedidos-venda/src/main/webapp/ValorVendasPorDia.xhtml" value="%17"/>
+  <alias
+   path="/pedidos-venda/src/main/java/com/algaworks/pedidovenda/service/PedidoService.java" value="%5"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://xmlns.jcp.org/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://xmlns.jcp.org/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+  <uri value="http://omnifaces.org/ui">
+   <prefix>o</prefix>
+  </uri>
+  <uri value="http://primefaces.org/ui">
+   <prefix>p</prefix>
+  </uri>
+ </uris>
+</kb-project>

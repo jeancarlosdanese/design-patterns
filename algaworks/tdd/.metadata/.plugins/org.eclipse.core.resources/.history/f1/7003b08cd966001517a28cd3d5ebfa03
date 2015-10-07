@@ -1,0 +1,14 @@
+package com.algaworks.desconto;
+
+public class CalculadorDescontoPrimeiraFaixa extends CalculadoraDescontoFaixa {
+
+	public CalculadorDescontoPrimeiraFaixa(CalculadoraDescontoFaixa proximo) {
+		super(proximo);
+	}
+
+	@Override
+	protected double calcular(double valorTotal) {
+		return 0;
+	}
+
+}

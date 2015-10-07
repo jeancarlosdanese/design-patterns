@@ -1,0 +1,9 @@
+package com.algaworks.curso.main;
+
+public class ConsultandoPrimeiroObjeto {
+
+	public ConsultandoPrimeiroObjeto() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

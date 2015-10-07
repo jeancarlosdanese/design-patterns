@@ -1,0 +1,22 @@
+package com.algaworks.desconto;
+
+public abstract class CalculadoraFaixaDesconto {
+
+	private CalculadoraDescontoFaixa proximo;
+
+	public CalculadoraFaixaDesconto(CalculadoraDescontoFaixa proximo) {
+		this.proximo = proximo;
+	}
+
+	public double descosto(double valorTotal) {
+		double desconto = calcular(valorTotal);
+
+		if (desconto == -1)
+			desconto.desconto(valorTotal);
+
+		return desconto;
+	}
+
+	protected abstract double calcular(double valorTotal);
+
+}

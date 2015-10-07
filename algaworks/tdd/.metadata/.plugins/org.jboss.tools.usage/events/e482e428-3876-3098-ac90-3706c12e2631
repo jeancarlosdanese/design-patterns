@@ -1,0 +1,10 @@
+#Wed Sep 30 08:46:39 BRT 2015
+l=Server Runtime ID
+ct=server
+d=1443613599220
+c=0
+cmp=server
+a=detect
+cl=org.jboss.ide.eclipse.as.wildfly.90
+v=3.1.0
+s=0

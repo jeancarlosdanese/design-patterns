@@ -1,0 +1,5 @@
+
+out 06, 2015 22:35:32.53 NEW SESSION
+out 06, 2015 22:35:32.55 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+out 06, 2015 22:35:32.55 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+out 06, 2015 22:35:32.55 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15876:21

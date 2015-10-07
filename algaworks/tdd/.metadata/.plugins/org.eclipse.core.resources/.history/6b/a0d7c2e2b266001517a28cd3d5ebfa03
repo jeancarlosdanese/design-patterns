@@ -1,0 +1,14 @@
+package com.algaworks;
+
+public class Pedido {
+
+	public void adicionarItem(String descriao, double valorUnitario, int quantidade) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public double valorTotal() {
+		return 0.0;
+	}
+
+}

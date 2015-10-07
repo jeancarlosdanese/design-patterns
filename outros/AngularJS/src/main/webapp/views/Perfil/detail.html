@@ -1,0 +1,27 @@
+<header ng-switch on="$location.path().indexOf('/Perfils/new') > -1">
+    <h3 ng-switch-when="true">Create a new Perfil</h3>
+    <h3 ng-switch-when="false">View or edit Perfil</h3>
+</header>
+<form id="PerfilForm" name="PerfilForm" class="form-horizontal" role="form">
+    <div ng-show="displayError" class="alert alert-danger">
+        <strong>Error!</strong> Something broke. Retry, or cancel and start afresh.
+    </div>
+    
+    <div class="form-group" ng-class="{'has-error': PerfilForm.perfil.$invalid}">
+        <label for="perfil" class="col-sm-2 control-label">Perfil</label>
+        <div id="perfilControls" class="col-sm-10">
+        <select id="perfil" name="perfil" class="form-control" ng-model="perfil.perfil" ng-options="p for p in perfilList"  >
+            <option value="">Choose a Perfil</option>
+        </select>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button id="savePerfil" name="savePerfil" class="btn btn-primary" ng-disabled="isClean() || PerfilForm.$invalid" ng-click="save()"><span class="glyphicon glyphicon-ok-sign"></span> Save</button>
+            <button id="cancel" name="cancel" class="btn btn-default" ng-click="cancel()"><span class="glyphicon glyphicon-remove-sign"></span> Cancel</button>
+            <button id="deletePerfil" name="deletePerfil" class="btn btn-danger" ng-show="perfil.id" ng-click="remove()"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+        </div>
+    </div>
+</form>

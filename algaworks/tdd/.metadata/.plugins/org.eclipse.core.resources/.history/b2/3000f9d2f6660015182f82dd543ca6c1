@@ -1,0 +1,11 @@
+package com.algaworks.service;
+
+public class PrecoPassagemServiceTest {
+
+	@Test
+	public void deveCriarPrecoPassagemService() throws Exception {
+		PrecoPassagemService precoPassagemService = new PrecoPassagemService();
+		
+	}
+	
+}

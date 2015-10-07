@@ -1,0 +1,16 @@
+1443533884687	Rename type 'PedidoVendaTest'
+1443534667496	Rename method 'adicionaItem'
+1443535228751	Rename method 'valortTotal'
+1443535712222	Extract local variable 'descontoEsperado'
+1443535830380	Extract method 'assertResumoDoPedido'
+1443535844044	Inline method 'assertResumoDoPedido'
+1443536067424	Extract method 'assertResumoDoPedido'
+1443536077554	Inline local variable 'valorTotalEsperado'
+1443536084587	Inline local variable 'descontoEsperado'
+1443536794198	Introduce Parameter Object
+1443550705756	Rename local variable 'valorTotoal'
+1443551058110	Rename type 'CalculadoraFaixaDesconto'
+1443551374771	Rename type 'CalculadorDescontoFaixaTerceira'
+1443551399101	Copy compilation unit
+1443551445352	Copy compilation unit
+1443559323315	Extract method 'validarQuantidadeItens'

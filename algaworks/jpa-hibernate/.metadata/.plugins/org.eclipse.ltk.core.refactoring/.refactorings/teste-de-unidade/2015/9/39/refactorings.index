@@ -1,0 +1,14 @@
+1442757712927	Move compilation unit
+1442757818904	Delete element
+1442758298702	Rename field 'somaDosLances'
+1442781566776	Delete element
+1442782785916	Extract method 'isPodeDarLance'
+1442783973513	Extract local variable 'usuario'
+1442783989205	Extract local variable 'usuario2'
+1442784025781	Rename local variable 'usuario'
+1442784051823	Rename local variable 'usuario2'
+1442784346546	Rename local variable 'numeroLances'
+1442786359157	Extract method 'ultimoLanceDo'
+1442787861925	Convert local variable 'joao' to field
+1442787875158	Convert local variable 'jose' to field
+1442787885261	Convert local variable 'maria' to field
